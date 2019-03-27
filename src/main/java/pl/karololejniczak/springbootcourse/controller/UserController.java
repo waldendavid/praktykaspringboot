@@ -10,7 +10,6 @@ import pl.karololejniczak.springbootcourse.model.UserDTO;
 public class UserController {
 
     @ResponseStatus(value = HttpStatus.CREATED)
-
     @RequestMapping (value = "/registry", method = RequestMethod.POST )
     public UserDTO registry (@RequestBody UserDTO userDTO) {
         return userDTO;
