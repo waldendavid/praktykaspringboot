@@ -23,7 +23,7 @@ public class UserController {
     public UserDTO confirm(@PathVariable(value = "id")Long id){
         return new UserDTO();
     }
-    @RequestMapping (value = "/add", method = RequestMethod.PUT )
+    @RequestMapping (value = "/addd", method = RequestMethod.PUT )
     public UserDTO add(@RequestBody UserDTO userDTO){
         return userDTO;
     }
